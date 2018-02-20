@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXPasswordField?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Font?>
+
+
+<GridPane alignment="center" hgap="10" vgap="10" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8.0.141" fx:controller="sample.Controller">
+   <columnConstraints>
+      <ColumnConstraints />
+   </columnConstraints>
+   <rowConstraints>
+      <RowConstraints />
+   </rowConstraints>
+   <children>
+      <AnchorPane prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #b084f4;">
+         <children>
+            <Pane prefHeight="400.0" prefWidth="300.0" style="-fx-background-color: #7e57c2;">
+               <children>
+                  <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="50.0" layoutY="29.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../image/school.png" />
+                     </image>
+                  </ImageView>
+                  <Label layoutX="29.0" layoutY="200.0" prefHeight="20.0" prefWidth="242.0" text="School Management System" textFill="#eeeded">
+                     <font>
+                        <Font size="16.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="8.0" layoutY="370.0" prefHeight="25.0" prefWidth="133.0" text="\@copyRight by sasiwan" textFill="#f20404" />
+               </children>
+            </Pane>
+            <JFXTextField fx:id="username" labelFloat="true" layoutX="390.0" layoutY="52.0" promptText="username">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </JFXTextField>
+            <JFXPasswordField fx:id="password" labelFloat="true" layoutX="390.0" layoutY="98.0" promptText="password">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </JFXPasswordField>
+            <ImageView fitHeight="38.0" fitWidth="44.0" layoutX="321.0" layoutY="52.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../image/uxrsgrzyvypnuuuxzzvf.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="38.0" fitWidth="44.0" layoutX="322.0" layoutY="95.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../image/Key_lock_locked_password-512.png" />
+               </image>
+            </ImageView>
+            <JFXButton fx:id="btnLogin" layoutX="451.0" layoutY="158.0" prefHeight="30.0" prefWidth="96.0" style="-fx-background-color: #7e56c1;" text="Login" textFill="#41f809">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </JFXButton>
+            <Label fx:id="loginStatus" layoutX="344.0" layoutY="216.0" prefHeight="30.0" prefWidth="207.0" textFill="#f50808" />
+            <Label layoutX="307.0" layoutY="369.0" prefHeight="17.0" prefWidth="83.0" text="DB Status:" />
+            <Label fx:id="dbStatus" layoutX="376.0" layoutY="369.0" prefHeight="17.0" prefWidth="150.0" textFill="#f20707">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+   </children>
+</GridPane>
